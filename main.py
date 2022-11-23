@@ -21,20 +21,23 @@ def knapSack(vmestimost, ves, cena):
     print()
     return a[len(cena)][vmestimost]
 
-cena = [5, 25, 6, 5, 2]
-ves = [1, 4, 1, 7, 3]
+
 print("Введите объём рюкзака:")
 vmestimost = int(input())
+
+cena = [5, 25, 6, 5, 2]
+ves = [1, 4, 1, 7, 3]
+
 print("Цена: \t")
 for i in range(0, 5):
     print(cena[i], end=" ")
-
 print("")
+
 print("Вес:")
 for i in range(0, 5):
     print(ves[i], end=" ")
-
 print("")
+
 print("Стоимость вещей при заполнении с повторениями: ")
 print(Recurrence(cena, ves, vmestimost))
 print("Стоимость вещей при заполнении без повторений: ")
